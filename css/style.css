@@ -30,6 +30,7 @@ h1{
     height: 60vh;
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .arrow-left,
@@ -49,7 +50,7 @@ i{
 .images{
     width: 80%;
     height: 100%;
-    position: relative;
+
 }
 
 .images img{
@@ -76,6 +77,6 @@ i{
     border: none;
     border-radius: 15px;
     position: absolute;
-    bottom: 80px;
+    bottom: 15%;
     background-color: rgba(0,0,0,0.5);
 }
