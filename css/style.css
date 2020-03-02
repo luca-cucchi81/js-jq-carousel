@@ -64,18 +64,18 @@ i{
     display: block;
 }
 
-button{
+.button i.active{
+    color: lightgreen;
+}
+
+.button{
+    padding: 10px 15px;
+    display: flex;
+    width: 10vw;
+    justify-content: space-between;
     border: none;
     border-radius: 15px;
     position: absolute;
     bottom: 80px;
     background-color: rgba(0,0,0,0.5);
-}
-
-button dl{
-    width: 8vw;
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 20px;
-    color: white;
 }
