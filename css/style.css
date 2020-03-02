@@ -79,6 +79,20 @@ i{
     border: none;
     border-radius: 15px;
     position: absolute;
-    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;;
     background-color: rgba(0,0,0,0.8);
+}
+
+.player{
+    width: 10vw;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 4em;
+}
+
+.selected{
+    color: red;
 }

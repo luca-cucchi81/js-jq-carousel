@@ -13,6 +13,22 @@ $('.arrow-right i').click(nextSlide);   //click su freccia dx --> ativva slide a
 //   slideContinuo = setInterval(nextSlide, 1500);
 // });
 
+/*funzione ciclo continuo e stop su click player --> ABILITARE PER VEDERE EFFETTO*/
+
+// var slideContinuo = setInterval(nextSlide, 1500);
+// clearInterval(slideContinuo);
+// $( ".player i.play" ).click(function() {
+//   slideContinuo = setInterval(nextSlide, 1500);
+//   $( ".player i.play" ).addClass('selected')
+//   $( ".player i.stop" ).removeClass('selected')
+// });
+//
+// $( ".player i.stop" ).click(function() {
+//   clearInterval(slideContinuo);
+//   $( ".player i.stop" ).addClass('selected')
+//   $( ".player i.play" ).removeClass('selected')
+// });
+
 //funzione quando slide a sx
 function prevSlide() {
     if ( $('.images img.active').hasClass('first') ) {
