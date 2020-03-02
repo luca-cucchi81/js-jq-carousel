@@ -3,12 +3,18 @@ $('.arrow-left i').click(function(){    //click, inoltre cambia il colore della 
     $('.arrow-left i').addClass('selected');
     $('.arrow-right i').removeClass('selected');
 });
+$('.arrow-right i').mouseleave(function(){  // allontanandosi dalla freccia, questa non è più selezionata
+    $(this).removeClass('selected');
+});
 
 $('.arrow-right i').click(nextSlide);   //click su freccia dx --> attiva slide a dx
 $('.arrow-right i').click(function(){   //click, inoltre cambia il colore della freccia in quanto selezionata
     $('.arrow-right i').addClass('selected');
     $('.arrow-left i').removeClass('selected');
-});    
+});
+$('.arrow-left i').mouseleave(function(){         // allontanandosi dalla freccia, questa non è più selezionata
+    $(this).removeClass('selected');
+});
 
 /*funzione ciclo continuo e stop su hover --> ABILITARE PER VEDERE EFFETTO*/
 
