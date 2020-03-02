@@ -2,10 +2,35 @@
 <html lang="it" dir="ltr">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/c42bf76b68.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
         <title>Carousel</title>
     </head>
     <body>
+        <div class="container">
+            <h1>A Simple Carousel</h1>
+
+            <div class="slideshow">
+                <div class="arrow-left">
+                    <i class="fas fa-chevron-circle-left"></i>
+                </div>
+
+                <div class="images">
+                    <img class="active first" src="https://cdn.pixabay.com/photo/2014/05/21/15/18/musician-349790_1280.jpg" alt="">
+                    <img src="https://cdn.pixabay.com/photo/2018/06/30/09/29/music-3507317_1280.jpg" alt="">
+                    <img src="https://cdn.pixabay.com/photo/2018/05/13/16/19/saxophone-3397023_1280.jpg" alt="">
+                    <img src="https://cdn.pixabay.com/photo/2014/05/21/15/47/piano-349928_1280.jpg" alt="">
+                    <img class= "last" src="https://cdn.pixabay.com/photo/2020/02/20/20/35/drumset-4865818_1280.jpg" alt="">
+                </div>
+
+                <div class="arrow-right">
+                    <i class="fas fa-chevron-circle-right"></i>
+                </div>
+            </div>
+        </div>
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="js/script.js" charset="utf-8"></script>
     </body>
