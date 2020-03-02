@@ -1,5 +1,14 @@
 $('.arrow-left i').click(prevSlide);    //click su freccia sx --> attiva slide a sx
-$('.arrow-right i').click(nextSlide);   //click su freccia dx --> ativva slide a dx
+$('.arrow-left i').click(function(){    //click, inoltre cambia il colore della freccia in quanto selezionata
+    $('.arrow-left i').addClass('selected');
+    $('.arrow-right i').removeClass('selected');
+});
+
+$('.arrow-right i').click(nextSlide);   //click su freccia dx --> attiva slide a dx
+$('.arrow-right i').click(function(){   //click, inoltre cambia il colore della freccia in quanto selezionata
+    $('.arrow-right i').addClass('selected');
+    $('.arrow-left i').removeClass('selected');
+});    
 
 /*funzione ciclo continuo e stop su hover --> ABILITARE PER VEDERE EFFETTO*/
 
@@ -28,6 +37,7 @@ $('.arrow-right i').click(nextSlide);   //click su freccia dx --> ativva slide a
 //   $( ".player i.stop" ).addClass('selected')
 //   $( ".player i.play" ).removeClass('selected')
 // });
+
 
 //funzione quando slide a sx
 function prevSlide() {
