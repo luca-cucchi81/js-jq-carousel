@@ -58,15 +58,17 @@ i{
     height: 100%;
     object-fit: cover;
     display: none;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .images img.active{
     display: block;
 }
-
+.button i{
+    color: #ffffff;
+}
 .button i.active{
-    color: lightgreen;
+    color: magenta;
 }
 
 .button{
@@ -78,5 +80,5 @@ i{
     border-radius: 15px;
     position: absolute;
     bottom: 15%;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.8);
 }

@@ -1,6 +1,17 @@
 $('.arrow-left i').click(prevSlide);    //click su freccia sx --> attiva slide a sx
 $('.arrow-right i').click(nextSlide);   //click su freccia dx --> ativva slide a dx
 
+//funzione ciclo continuo e stop su hover
+var slideContinuo = setInterval(nextSlide, 1500);
+
+$( ".images" ).mouseenter(function() {
+  clearInterval(slideContinuo);
+});
+
+$( ".images" ).mouseleave(function() {
+  slideContinuo = setInterval(nextSlide, 1500);
+});
+
 //funzione quando slide a sx
 function prevSlide() {
     if ( $('.images img.active').hasClass('first') ) {
